@@ -6,8 +6,6 @@ for _,Weapon in pairs(game.workspace:GetChildren()) do
    end
 end
 for _,User in pairs(game.workspace:GetChildren()) do
-	if (User:FindFirstChild("Highlight")) then
-	   else
 	   if (User:FindFirstChild("TPVAccessoryMagpack2L")) then
 	   local highlight = Instance.new("Highlight", User)
 	   if (_G.EnemyColor == 'default' or _G.EnemyColor == 'Default' ) then
@@ -24,7 +22,6 @@ for _,User in pairs(game.workspace:GetChildren()) do
 	   	     highlight.FillColor = _G.TeamColor
 		  end
 	   end
-	end		
 	end
 end	
 end
