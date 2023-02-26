@@ -26,11 +26,5 @@ for _,User in pairs(game.workspace:GetChildren()) do
 		  end
 	   end
 	end
-   if (User:FindFirstChild("Highlight")) then
-	if (User:FindFirstChild("friendly_marker") and User.Highlight.FillColor == _G.EnemyColor or User.Highlight.FillColor == Color3.fromRGB(255, 0, 0) and User:FindFirstChild('name_label').TextColor3 == Color3.fromRGB(67, 140, 229)) then
-	   print("Error changing color, changing now.")
-	   User.Highlight.FillColor = _G.TeamColor
-	end
-    end
 end	
 end
