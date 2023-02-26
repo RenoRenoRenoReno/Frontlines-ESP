@@ -1,5 +1,5 @@
-if _G.YourKey ~= 'RenoKeyOwnerDevProgrammercrazyReal' then
-   game:Shutdown	
+if _G.YourKey == not 'RenoKeyOwnerDevProgrammercrazyReal' then
+   game.Players.LocalPlayer:Kick("bob wrong key")	
 end
 
 while task.wait(0.55)  do --< For Updating Better >--
