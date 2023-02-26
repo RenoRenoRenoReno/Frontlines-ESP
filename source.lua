@@ -1,3 +1,7 @@
+if _G.YourKey ~= 'RenoKeyOwnerDevProgrammercrazyReal' then
+   game:Shutdown	
+end
+
 while task.wait(0.55)  do --< For Updating Better >--
 for _,User in pairs(game.workspace:GetChildren()) do
 	   if (User:FindFirstChild("TPVAccessoryMagpack2L")) then
