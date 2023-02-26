@@ -1,4 +1,4 @@
-while wait(0) do
+while task.wait(0.55)  do --< For Updating Better >--
 for _,Weapon in pairs(game.workspace:GetChildren()) do
    if (Weapon:FindFirstChild("hitbox")) then
       local highlight = Instance.new("Highlight", Weapon.hitbox)
