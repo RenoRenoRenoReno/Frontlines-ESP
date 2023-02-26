@@ -3,6 +3,14 @@ for _,User in pairs(game.workspace:GetChildren()) do
 	if (User:FindFirstChild("Highlight")) then
 	   return		
 	end
+	if (User:FindFirstChild("hitbox")) then
+	   local highlight = Instance.new("Highlight", User.hitbox)
+	   if (_G.EnemyColor == 'default' or _G.EnemyColor == 'Default' ) then
+	   	      print("Not changing ENEMY COLOR ESP")
+	      else
+	          highlight.FillColor = _G.EnemyColor	
+	   end	
+	end
 	if (User:FindFirstChild("TPVAccessoryMagpack2L")) then
 	   local highlight = Instance.new("Highlight", User)
 	   if (_G.EnemyColor == 'default' or _G.EnemyColor == 'Default' ) then
