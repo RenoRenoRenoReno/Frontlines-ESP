@@ -1,10 +1,4 @@
 while task.wait(0.55)  do --< For Updating Better >--
-for _,Weapon in pairs(game.workspace:GetChildren()) do
-   if (Weapon:FindFirstChild("hitbox")) then
-      local highlight = Instance.new("Highlight", Weapon.hitbox)
-      highlight.Name = 'WeaponHIGHLIGHT'
-   end
-end
 for _,User in pairs(game.workspace:GetChildren()) do
 	   if (User:FindFirstChild("TPVAccessoryMagpack2L")) then
 	   local highlight = Instance.new("Highlight", User)
